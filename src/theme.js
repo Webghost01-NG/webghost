@@ -1,0 +1,26 @@
+export const theme = {
+  colors: {
+    base: "#0b1220",
+    surface: "#131d2b",
+    surfaceHover: "#182438",
+    line: "#1e293b",
+    lineBright: "#334155",
+    text: "#f8fafc",
+    muted: "#64748b",
+    dim: "#475569",
+    primary: "#22c55e",
+    primaryDim: "#15803d",
+    secondary: "#06b6d4",
+    secondaryDim: "#0e7490",
+    highlight: "#f59e0b",
+    highlightDim: "#b45309",
+    danger: "#e05d5d",
+  },
+  fonts: {
+    display: `"Space Grotesk", sans-serif`,
+    body: `"Inter", sans-serif`,
+    mono: `"JetBrains Mono", monospace`,
+  },
+  radii: { sm: "6px", md: "8px", lg: "12px", xl: "16px", full: "9999px" },
+  breakpoints: { sm: "640px", md: "768px", lg: "1024px" },
+};
