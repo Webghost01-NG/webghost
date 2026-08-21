@@ -152,16 +152,38 @@ const LiveDemoBadge = styled.a`
   font-family: ${({ theme }) => theme.fonts.mono};
   font-size: 11px;
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.base};
+  color: #0b1220;
   background: ${({ theme }) => theme.colors.primary};
-  padding: 4px 10px;
-  border-radius: 4px;
+  padding: 5px 12px;
+  border-radius: 6px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
+  transition: all 0.2s ease;
 
   &:hover {
     background: #4ade80;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+  }
+`;
+
+const RepoBadge = styled.a`
+  font-family: ${({ theme }) => theme.fonts.mono};
+  font-size: 11px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.text};
+  background: ${({ theme }) => theme.colors.base};
+  border: 1px solid ${({ theme }) => theme.colors.lineBright};
+  padding: 5px 12px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;
 
@@ -204,11 +226,15 @@ export default function ProjectCard({ project, delay = 0 }) {
             Details <ArrowUpRight size={14} />
           </ViewLink>
 
-          {project.liveUrl && (
+          {project.liveUrl ? (
             <LiveDemoBadge href={project.liveUrl} target="_blank" rel="noreferrer">
               Live Demo <ArrowUpRight size={12} />
             </LiveDemoBadge>
-          )}
+          ) : project.githubUrl ? (
+            <RepoBadge href={project.githubUrl} target="_blank" rel="noreferrer">
+              <GithubIcon size={13} /> View Repo
+            </RepoBadge>
+          ) : null}
         </CardFooter>
       </Card>
     </Reveal>
