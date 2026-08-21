@@ -112,12 +112,12 @@ const AchievementDate = styled.span`
   white-space: nowrap;
 `;
 
-export default function Home() {
+export default function Home({ onOpenResume }) {
   const featured = projects.slice(0, 3);
 
   return (
     <>
-      <Hero />
+      <Hero onOpenResume={onOpenResume} />
       <SkillsGrid />
 
       <Section $bordered>

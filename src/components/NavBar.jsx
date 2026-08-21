@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import styled from "styled-components";
 
@@ -54,7 +54,7 @@ const Dot = styled.span`
 
 const DesktopNav = styled.nav`
   display: none;
-  gap: 32px;
+  gap: 28px;
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     display: flex;
     align-items: center;
@@ -71,6 +71,27 @@ const NavItem = styled(NavLink)`
 
   &:hover { color: ${({ theme }) => theme.colors.text}; }
   &.active { color: ${({ theme }) => theme.colors.primary}; }
+`;
+
+const ResumeBtn = styled.button`
+  background: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.lineBright};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.mono};
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: ${({ theme }) => theme.radii.md};
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.surfaceHover};
+  }
 `;
 
 const MenuButton = styled.button`
@@ -106,7 +127,7 @@ const MobileNavItem = styled(NavLink)`
   &.active { color: ${({ theme }) => theme.colors.primary}; }
 `;
 
-export default function NavBar() {
+export default function NavBar({ onOpenResume }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -130,6 +151,9 @@ export default function NavBar() {
               {l.label}
             </NavItem>
           ))}
+          <ResumeBtn onClick={onOpenResume}>
+            <FileText size={14} /> Resume
+          </ResumeBtn>
         </DesktopNav>
 
         <MenuButton onClick={() => setOpen((v) => !v)} aria-label={open ? "Close menu" : "Open menu"}>
@@ -150,6 +174,14 @@ export default function NavBar() {
                 {l.label}
               </MobileNavItem>
             ))}
+            <ResumeBtn
+              onClick={() => {
+                setOpen(false);
+                onOpenResume();
+              }}
+            >
+              <FileText size={14} /> View Resume
+            </ResumeBtn>
           </MobileNav>
         )}
       </AnimatePresence>

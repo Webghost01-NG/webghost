@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { Mail, ExternalLink, Award, Code2 } from "lucide-react";
+import { Mail, Award, FileText } from "lucide-react";
 import { useTypedHash } from "../hooks/useTypedHash";
 import { profile, stats } from "../data/profile";
 
@@ -177,6 +177,26 @@ const GhostBtn = styled(motion(Link))`
   }
 `;
 
+const ResumeActionBtn = styled(motion.button)`
+  padding: 12px 24px;
+  border-radius: ${({ theme }) => theme.radii.md};
+  border: 1px solid ${({ theme }) => theme.colors.secondaryDim};
+  background: rgba(6, 182, 212, 0.1);
+  color: ${({ theme }) => theme.colors.secondary};
+  font-family: ${({ theme }) => theme.fonts.mono};
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(6, 182, 212, 0.2);
+    border-color: ${({ theme }) => theme.colors.secondary};
+  }
+`;
+
 const StatsGrid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -272,7 +292,7 @@ const Dd = styled.dd`
   word-break: break-all;
 `;
 
-export default function Hero() {
+export default function Hero({ onOpenResume }) {
   const { hash, settled } = useTypedHash(40, 18);
   const [first, ...rest] = profile.name.split(" ");
 
@@ -315,6 +335,9 @@ export default function Hero() {
             <PrimaryBtn to="/projects" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               Explore Projects →
             </PrimaryBtn>
+            <ResumeActionBtn onClick={onOpenResume} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <FileText size={15} /> View Resume
+            </ResumeActionBtn>
             <GhostBtn to="/contact" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               Get in Touch
             </GhostBtn>
