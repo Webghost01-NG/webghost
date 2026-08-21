@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { Mail, Award, FileText } from "lucide-react";
+import { Mail, Award, FileText, BookOpen } from "lucide-react";
 import { useTypedHash } from "../hooks/useTypedHash";
 import { profile, stats } from "../data/profile";
 
@@ -325,6 +325,9 @@ export default function Hero({ onOpenResume }) {
             </SocialIcon>
             <SocialIcon href={profile.linkedinUrl} target="_blank" rel="noreferrer" title="LinkedIn Profile">
               <LinkedinIcon size={18} />
+            </SocialIcon>
+            <SocialIcon href={profile.mediumUrl} target="_blank" rel="noreferrer" title="Medium Publications">
+              <BookOpen size={18} />
             </SocialIcon>
             <SocialIcon href={`mailto:${profile.email}`} title="Send Email">
               <Mail size={18} />

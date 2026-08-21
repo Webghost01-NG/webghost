@@ -1,4 +1,4 @@
-// All content sourced from profile, CVs, GitHub repositories, Vercel deployments, and Web3Bridge Africa credentials.
+// All content sourced from profile, CVs, GitHub repositories, Vercel deployments, Medium articles, and Web3Bridge Africa credentials.
 export const profile = {
   name: "Abdurrahman Opeyemi Adesanya",
   alias: "Web ghost",
@@ -10,6 +10,7 @@ export const profile = {
   github: "github.com/Webghost01-NG",
   githubUrl: "https://github.com/Webghost01-NG",
   linkedinUrl: "https://www.linkedin.com/in/abdurrahman-adesanya-53aaa823a/",
+  mediumUrl: "https://medium.com/@webghost1702",
   summary:
     "Full-stack and Web3 developer building decentralised applications, autonomous AI agents, payment protocols, and interactive Web3 platforms. Web3Bridge Africa Alumni (Web2 Advanced & Web3 Solidity). Proficient in React, JavaScript, Solidity, Foundry, Next.js, and Ethers.js, with a proven track record of shipping production-ready protocols under strict hackathon deadlines.",
 };
@@ -93,25 +94,25 @@ export const networks = [
 
 export const articles = [
   {
-    title: "Building Model Context Protocol (MCP) Servers for Autonomous AI Agents",
-    tag: "AI & Web3",
-    readTime: "5 min read",
-    snippet: "How to connect LLMs (Claude, Cursor) to EVM smart contract execution vectors using deterministic MCP tool interfaces.",
-    url: "https://github.com/Webghost01-NG/executix-ai",
-  },
-  {
-    title: "Gas Optimization & Security Patterns in Solidity Smart Contracts",
-    tag: "Solidity",
-    readTime: "7 min read",
-    snippet: "A practical guide to memory caching, reentrancy guards, and custom errors using Foundry test suites.",
-    url: "https://github.com/Webghost01-NG",
-  },
-  {
-    title: "Democratizing Real Estate RWAs via EIP-712 Signed AI Appraisals",
-    tag: "RWAs & BOT Chain",
+    title: "Ethereum's Glow Up: The Full Story of Its Stages from Frontier to Fusaka",
+    tag: "Ethereum & EVM",
     readTime: "6 min read",
-    snippet: "Architecting fractional real estate tokenization contracts backed by verifiable cryptographic oracle attestations.",
-    url: "https://frontend-ecru-nu-85.vercel.app",
+    snippet: "Exploring the evolutionary timeline of Ethereum, from its genesis Frontier network to modern upgrade stages like Fusaka.",
+    url: "https://medium.com/@webghost1702/ethereums-glow-up-the-full-story-of-its-stages-from-frontier-to-fusaka-75393a57ba14",
+  },
+  {
+    title: "Behind the Seed: How Wallets, Private Keys, and Seed Phrases Are Actually Created",
+    tag: "Cryptography & Security",
+    readTime: "7 min read",
+    snippet: "A deep dive into BIP-39 mnemonic derivation, entropy generation, HD wallets, and SECP256k1 elliptic curve key pairs.",
+    url: "https://medium.com/@webghost1702/behind-the-seed-how-wallets-private-keys-and-seed-phrases-are-actually-created-49e1b556d41f",
+  },
+  {
+    title: "Multi-Chain and Its Examples",
+    tag: "Blockchain Architecture",
+    readTime: "5 min read",
+    snippet: "Analyzing multi-chain ecosystems, cross-chain communication protocols, interoperability standards, and practical industry examples.",
+    url: "https://medium.com/@webghost1702/multi-chain-and-its-examples-285162ea56cd",
   },
 ];
 
