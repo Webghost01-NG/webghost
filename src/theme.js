@@ -1,23 +1,20 @@
-// Original theme colors saved for easy revert:
-// base: "#0b1220", surface: "#131d2b", surfaceHover: "#182438", line: "#1e293b", lineBright: "#334155", text: "#f8fafc", muted: "#64748b", dim: "#475569"
-
 export const theme = {
   colors: {
-    base: "#ffffff",
-    surface: "#f8fafc",
-    surfaceHover: "#f1f5f9",
-    line: "#e2e8f0",
-    lineBright: "#cbd5e1",
-    text: "#0f172a",
-    muted: "#475569",
-    dim: "#64748b",
-    primary: "#16a34a",
+    base: "#0b1220",
+    surface: "#131d2b",
+    surfaceHover: "#182438",
+    line: "#1e293b",
+    lineBright: "#334155",
+    text: "#f8fafc",
+    muted: "#64748b",
+    dim: "#475569",
+    primary: "#22c55e",
     primaryDim: "#15803d",
-    secondary: "#0891b2",
+    secondary: "#06b6d4",
     secondaryDim: "#0e7490",
-    highlight: "#d97706",
+    highlight: "#f59e0b",
     highlightDim: "#b45309",
-    danger: "#dc2626",
+    danger: "#e05d5d",
   },
   fonts: {
     display: `"Space Grotesk", sans-serif`,
