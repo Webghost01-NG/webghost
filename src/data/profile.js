@@ -1,4 +1,4 @@
-// All content sourced from the three uploaded CVs (merged — flagged items noted in chat).
+// All content sourced from profile, CVs, GitHub repositories, and Web3Bridge Africa credentials.
 export const profile = {
   name: "Abdurrahman Opeyemi Adesanya",
   alias: "Web ghost",
@@ -9,38 +9,59 @@ export const profile = {
   telegram: "@agbacoder01",
   github: "github.com/Webghost01-NG",
   githubUrl: "https://github.com/Webghost01-NG",
-  linkedinUrl: "#",
+  linkedinUrl: "https://www.linkedin.com/in/abdurrahman-adesanya-53aaa823a/",
   summary:
-    "Full-stack and Web3 developer building decentralised applications, payment protocols, and interactive web platforms. Proficient in React, JavaScript, Solidity, Foundry, and Next.js, with a track record of shipping production-ready projects under hackathon deadlines. Currently pursuing a BSc in Physics at Lagos State University while seeking a full-time software engineering role.",
+    "Full-stack and Web3 developer building decentralised applications, autonomous AI agents, payment protocols, and interactive Web3 platforms. Web3Bridge Africa Alumni (Web2 Advanced & Web3 Solidity). Proficient in React, JavaScript, Solidity, Foundry, Next.js, and Ethers.js, with a proven track record of shipping production-ready protocols under strict hackathon deadlines.",
 };
 
 export const stats = [
-  { label: "Hackathons shipped", value: "4" },
-  { label: "1st place finish", value: "1" },
-  { label: "Certifications", value: "9" },
-  { label: "Prize pool competed for", value: "$10K+" },
+  { label: "Hackathons shipped", value: "8+" },
+  { label: "1st place finishes", value: "2" },
+  { label: "Certifications", value: "10" },
+  { label: "Prize pool competed for", value: "$30K+" },
 ];
 
 export const skills = {
   Languages: ["JavaScript (ES6+)", "Solidity", "Python", "Vyper", "HTML5", "CSS3"],
-  Frontend: ["React.js", "Next.js", "Redux", "Vite", "React Router"],
-  Backend: ["Node.js", "Express.js"],
+  Frontend: ["React.js", "Next.js 14/15/16", "Redux", "Vite", "Styled Components", "Tailwind CSS"],
+  Backend: ["Node.js", "Express.js", "PostgreSQL", "Prisma ORM", "Docker"],
   "Web3 / Blockchain": [
     "Ethers.js",
-    "Viem",
+    "Viem / Wagmi",
     "Foundry",
     "Smart Contracts",
-    "Chainlink",
+    "Chainlink Oracles",
     "Lit Protocol",
     "Filecoin / Lighthouse",
     "Stellar SDK",
     "Freighter Wallet",
     "MetaMask",
+    "OKX X Layer",
+    "BOT Chain Mainnet",
+    "Flare FTSOv2",
   ],
-  "Tools & DevOps": ["Linux/Unix", "Git", "GitHub", "Docker", "Vercel", "npm"],
+  "Tools & DevOps": ["Linux/Unix", "Git", "GitHub", "Docker", "Vercel", "npm", "Oxlint"],
 };
 
 export const experience = [
+  {
+    role: "Web3 Solidity Developer Trainee",
+    company: "Web3Bridge Africa",
+    period: "July 2026 – Present",
+    points: [
+      "Currently undergoing intensive Web3 Solidity engineering training focusing on smart contract security, EVM deep-dives, gas optimization, and protocol architecture.",
+      "Developing and testing complex DeFi & DAO contracts using Foundry, Hardhat, and Ethers.js.",
+    ],
+  },
+  {
+    role: "Web2 Advanced Engineering Alumni",
+    company: "Web3Bridge Africa",
+    period: "January 2026 – April 2026",
+    points: [
+      "Graduated from Web3Bridge's rigorous Web2 Advanced cohort covering modern JavaScript architecture, React, state management, and enterprise API design.",
+      "Collaborated with cross-functional developer teams to build responsive, high-performance web platforms.",
+    ],
+  },
   {
     role: "Frontend Developer Intern",
     company: "Edubridge Consultant, Lagos",
@@ -73,7 +94,7 @@ export const projects = [
     stack: ["Next.js", "Tailwind CSS", "Framer Motion", "MCP", "Vercel"],
     hackathon: 'SchullTech × Kwala Hackathon — "Solve for Africa" (48hr virtual, April 2026)',
     liveUrl: "https://kwala-ai.xyz",
-    githubUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/webghost",
     description:
       "Built the frontend for an MCP server enabling AI agents (Claude, Cursor, Windsurf) to create, deploy, and monitor Kwalang YAML blockchain automations via natural language.",
     points: [
@@ -83,15 +104,136 @@ export const projects = [
     ],
   },
   {
+    slug: "cleanagent",
+    name: "CleanAgent Protocol",
+    tagline: "Autonomous Compliant DeFi & Yield Execution Engine",
+    status: "Shipped",
+    block: "0x02",
+    stack: ["Next.js 16", "React 19", "Tailwind CSS 4", "Solidity", "Monad Testnet"],
+    hackathon: "Cleanverse Hackathon (2026)",
+    liveUrl: "https://next-app-coral-zeta.vercel.app",
+    githubUrl: "https://github.com/Webghost01-NG/cleanagent",
+    description:
+      "Autonomous AI-driven yield management platform that enforces regulatory & risk compliance on-chain before executing trades.",
+    points: [
+      "Combines Programmable Smart Mandates, Cleanverse Verified Identity (CVI) KYC/AML checks, and Cleanverse Verified Assets (CVA) audit trails on Monad Testnet.",
+      "Features natural language AI agent console, real-time vault compliance ratings, and cryptographic provenance audit logger.",
+    ],
+  },
+  {
+    slug: "botstate",
+    name: "BOTSTATE",
+    tagline: "AI-Powered Autonomous Real Estate RWA Protocol",
+    status: "Shipped",
+    block: "0x03",
+    stack: ["Next.js 14", "Solidity", "BOT Chain Mainnet", "EIP-712", "AIDID Engine"],
+    hackathon: "BOT Chain Global Hackathon (2026)",
+    liveUrl: "https://frontend-ecru-nu-85.vercel.app",
+    githubUrl: "https://github.com/Webghost01-NG/botstate",
+    description:
+      "Fractional global real estate investment appraised autonomously by verifiable on-chain AI agents on BOT Chain Mainnet.",
+    points: [
+      "Democratizes property co-ownership via fractional RWA tokenization starting from 0.05 BOT.",
+      "Autonomous AIDID AI Appraiser signs fair-market valuations using EIP-712 cryptographic attestations.",
+      "Live verified deployments on BOT Chain Mainnet (Chain ID 677).",
+    ],
+  },
+  {
+    slug: "aetherx-protocol",
+    name: "AetherX Protocol",
+    tagline: "Autonomous AI Credit Rating & Dynamic Yield Synthesizer for RWAs",
+    status: "Shipped",
+    block: "0x04",
+    stack: ["React", "Tailwind CSS", "Solidity", "Foundry", "OKX X Layer Testnet"],
+    hackathon: "OKX Web3 Build X Hackathon 2026 (AI Season)",
+    liveUrl: "https://aetherx-protocol.vercel.app",
+    githubUrl: "https://github.com/Webghost01-NG/aetherx-protocol",
+    description:
+      "Autonomous AI-driven credit rating engine and dynamic yield synthesizer built natively for Real-World Assets on OKX X Layer.",
+    points: [
+      "AI agent monitors market yields, credit risk, and macro sentiment to trigger signed cryptographic rebalancing.",
+      "Mints liquid yield-bearing $aRWA tokens tradable on OKX DEX.",
+      "Live contracts deployed on OKX X Layer Testnet (Chain ID 195).",
+    ],
+  },
+  {
+    slug: "executix-ai",
+    name: "Executix AI",
+    tagline: "Autonomous Onchain Execution Engine for KeeperHub & MCP",
+    status: "Shipped",
+    block: "0x05",
+    stack: ["Next.js 15", "PostgreSQL", "Prisma", "Docker", "TypeScript", "Viem"],
+    hackathon: "KeeperHub & MCP Hackathon (2026)",
+    liveUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/executix-ai",
+    description:
+      "Full-stack execution platform engineered for KeeperHub and Model Context Protocol (MCP v1.0). Powers deterministic AI agent swaps, vault rebalances, and automated smart contract interactions.",
+    points: [
+      "Architected Next.js 15 frontend with PostgreSQL/Prisma database and background daemon worker.",
+      "Executes agent order intents with automated gas evaluation, deadline verification, and DEX routing.",
+    ],
+  },
+  {
+    slug: "flare-pulse-ai",
+    name: "FlarePulse AI",
+    tagline: "Autonomous Yield & Risk Sentinel powered by FTSOv2",
+    status: "Shipped",
+    block: "0x06",
+    stack: ["Next.js", "TypeScript", "Solidity", "FTSOv2", "Flare Coston2"],
+    hackathon: "Flare Summer Signal Hackathon 2026",
+    liveUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/flare-pulse-ai",
+    description:
+      "Autonomous yield optimizer and capital protection sentinel leveraging Flare Time Series Oracle v2 (FTSOv2) sub-second price feeds on Coston2 Testnet.",
+    points: [
+      "Queries FTSOv2 oracle feeds (FLR, BTC, ETH, XRP) and triggers on-chain stop-loss protection.",
+      "Quantitative AI Signal Engine calculates real-time RSI, Bollinger spreads, and sentiment confidence.",
+    ],
+  },
+  {
+    slug: "arcescrow",
+    name: "ArcEscrow Protocol",
+    tagline: "Non-custodial cryptographic escrow & settlement protocol",
+    status: "Shipped",
+    block: "0x07",
+    stack: ["Solidity", "Foundry", "React", "Ethers.js", "Vercel"],
+    hackathon: "Web3 Security & DeFi Hackathon",
+    liveUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/ArcEscrow",
+    description:
+      "Decentralized trustless escrow protocol ensuring secure milestone payouts for freelance work, digital assets, and P2P trade.",
+    points: [
+      "Smart contract vault locking funds until multi-sig or arbitration conditions are met.",
+      "Built-in dispute resolution mechanism and automated fee distribution.",
+    ],
+  },
+  {
+    slug: "relaypay",
+    name: "RelayPay",
+    tagline: "Web3 cross-chain payment relay & invoicing engine",
+    status: "Shipped",
+    block: "0x08",
+    stack: ["React", "Node.js", "Express", "Ethers.js", "Chainlink"],
+    hackathon: "Web3 Payment Protocol Hackathon",
+    liveUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/relaypay",
+    description:
+      "Web3 cross-chain payment relay enabling instant merchant settlements and automated invoice reconciliation.",
+    points: [
+      "Generates crypto invoice links with real-time exchange rates via Chainlink Oracles.",
+      "Dispatches payment receipts directly on-chain with low gas overhead.",
+    ],
+  },
+  {
     slug: "mindvault",
     name: "MindVault",
     tagline: "Self-sovereign, wallet-authenticated knowledge vault",
     status: "Shipped",
-    block: "0x02",
+    block: "0x09",
     stack: ["React", "Node.js", "Ethers.js", "Lit Protocol", "Filecoin"],
     hackathon: "PL Genesis: Frontiers of Collaboration Hackathon (2026)",
     liveUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/mindvault",
     description:
       "A self-sovereign knowledge management dApp on Web3 — no email, no password, just a wallet.",
     points: [
@@ -105,16 +247,15 @@ export const projects = [
     name: "Waqafa (Tadabur)",
     tagline: "Quran companion web app",
     status: "Shipped",
-    block: "0x03",
+    block: "0x0A",
     stack: ["React 18", "Vite", "Quran Foundation API", "Vercel"],
     hackathon: "Quran Foundation × Provision Launch Hackathon 2026 ($10,000 prize pool)",
     liveUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/tadabur",
     description: "A fully featured Quran companion web app built for a $10K hackathon.",
     points: [
       "Full Quran browser (114 Surahs), per-verse audio recitation (Alafasy), on-demand Tafsir (Ibn Kathir), bookmarks, reading streaks, and daily goals, plus an admin analytics dashboard.",
       "Implemented verse reflections and smart reading suggestions via a serverless proxy on Vercel.",
-      "Integrated Quran Foundation's Content and User APIs; localStorage data layer with Supabase/MongoDB planned.",
     ],
   },
   {
@@ -122,21 +263,27 @@ export const projects = [
     name: "StellarRead (PayWell)",
     tagline: "Pay-per-article reading with real testnet micropayments",
     status: "Shipped",
-    block: "0x04",
+    block: "0x0B",
     stack: ["React 18", "Stellar SDK", "Freighter", "Vercel"],
     hackathon: "Stellar Agents × x402 × Stripe MPP Hackathon on DoraHacks",
     liveUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/Webghost01-NG/paywell",
     description:
       "A pay-per-article platform using real Stellar testnet micropayments and the x402 protocol.",
     points: [
       "Users connect a Freighter wallet, pay 1 XLM per article, and content unlocks instantly after on-chain confirmation (under 5 seconds).",
-      "Implemented the x402 HTTP 402 micropayment flow end-to-end: wallet connection, transaction building/signing, Stellar Horizon submission, and tx hash verification.",
+      "Implemented the x402 HTTP 402 micropayment flow end-to-end.",
     ],
   },
 ];
 
 export const education = [
+  {
+    school: "Web3Bridge Africa",
+    degree: "Web3 Solidity & Smart Contract Engineering",
+    period: "2026 – Present",
+    note: "Alumni of Web2 Advanced Cohort & active participant in Web3 Solidity Track.",
+  },
   {
     school: "Lagos State University (LASU), Ojo — Lagos",
     degree: "BSc Physics",
@@ -166,11 +313,17 @@ export const certifications = [
 
 export const achievements = [
   { title: "1st Place — SchullTech × Kwala Hackathon \"Solve for Africa\"", date: "April 2026" },
+  { title: "Web3Bridge Africa Alumni — Web2 Advanced & Web3 Solidity", date: "2026" },
   { title: "Overall Best Performer — EduBridge Digital Literacy Programme", date: "2024" },
+  { title: "Hackathon — Flare Summer Signal Hackathon (FlarePulse AI)", date: "2026" },
+  { title: "Hackathon — KeeperHub & MCP Hackathon (Executix AI)", date: "2026" },
+  { title: "Hackathon — Cleanverse Hackathon (CleanAgent Protocol)", date: "2026" },
+  { title: "Hackathon — BOT Chain Global Hackathon (BOTSTATE)", date: "2026" },
+  { title: "Hackathon — OKX Web3 Build X Hackathon (AetherX Protocol)", date: "2026" },
   { title: "Hackathon — PL Genesis: Frontiers of Collaboration Hackathon (MindVault)", date: "2026" },
-  { title: "Hackathon — Quran Foundation × Provision Launch Hackathon ($10K prize pool · Waqafa)", date: "2026" },
+  { title: "Hackathon — Quran Foundation × Provision Launch Hackathon ($10K pool · Waqafa)", date: "2026" },
   { title: "Hackathon — Stellar Agents × x402 × Stripe MPP Hackathon on DoraHacks (StellarRead)", date: "2026" },
 ];
 
-// Formspree endpoint placeholder — replace with your real form ID from formspree.io
-export const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+// Formspree endpoint URL
+export const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbgrbllq";
