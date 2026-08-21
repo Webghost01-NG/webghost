@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import SkillsGrid from "../components/SkillsGrid";
+import NetworksGrid from "../components/NetworksGrid";
+import JourneyTimeline from "../components/JourneyTimeline";
+import ArticlesSection from "../components/ArticlesSection";
 import ProjectCard from "../components/ProjectCard";
 import Reveal from "../components/Reveal";
 import { Section, Eyebrow, Heading } from "../components/ui";
@@ -119,6 +122,8 @@ export default function Home({ onOpenResume }) {
     <>
       <Hero onOpenResume={onOpenResume} />
       <SkillsGrid />
+      <NetworksGrid />
+      <JourneyTimeline />
 
       <Section $bordered>
         <Reveal>
@@ -137,6 +142,8 @@ export default function Home({ onOpenResume }) {
           ))}
         </ProjectGrid>
       </Section>
+
+      <ArticlesSection />
 
       <Section $bordered>
         <Reveal>

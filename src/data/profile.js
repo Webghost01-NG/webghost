@@ -43,6 +43,78 @@ export const skills = {
   "Tools & DevOps": ["Linux/Unix", "Git", "GitHub", "Docker", "Vercel", "npm", "Oxlint"],
 };
 
+export const journey = [
+  {
+    period: "2022 – Expected 2027",
+    title: "BSc Physics Undergraduate",
+    institution: "Lagos State University (LASU)",
+    description: "Studying analytical physics, electromagnetic theory, and computational logic alongside full-stack & Web3 engineering.",
+  },
+  {
+    period: "Late 2023 – Mid 2024",
+    title: "EduBridge Internship & Best Performer Award",
+    institution: "EduBridge Consultant, Lagos",
+    description: "Completed intensive frontend engineering internship. Awarded overall Best Performer (awarded laptop) and won Software Engineering track competition.",
+  },
+  {
+    period: "Late 2025",
+    title: "Cyfrin Updraft & Web3 Engineering Fundamentals",
+    institution: "Cyfrin Updraft",
+    description: "Began deep dive into Solidity smart contract security, Foundry testing, and EVM architecture earning 8 Cyfrin certifications.",
+  },
+  {
+    period: "Jan 2026 – Apr 2026",
+    title: "Web3Bridge Web2 Advanced Cohort XIV",
+    institution: "Web3Bridge Africa",
+    description: "Completed rigorous online Web2 Advanced cohort mastering modern JavaScript, React state management, and full-stack API architectures.",
+  },
+  {
+    period: "April 2026",
+    title: "1st Place Winner — SchullTech × Kwala Hackathon",
+    institution: "Solve for Africa Hackathon",
+    description: "Won 1st Place in 48-hour virtual hackathon building Kwala-MCP frontend for AI-native YAML blockchain automation.",
+  },
+  {
+    period: "July 2026 – Present",
+    title: "Web3Bridge Cohort XV — Solidity Track",
+    institution: "Web3Bridge Africa (Onsite, Lagos)",
+    description: "Selected for intensive onsite Web3 Solidity engineering program building production smart contracts, gas optimizations, and AI agent protocols.",
+  },
+];
+
+export const networks = [
+  { name: "OKX X Layer", type: "Testnet (195)", status: "Active Deployments" },
+  { name: "BOT Chain", type: "Mainnet (677)", status: "Verified Contracts" },
+  { name: "Monad", type: "Testnet", status: "CleanAgent Protocol" },
+  { name: "Flare Coston2", type: "Testnet (114)", status: "FTSOv2 Oracles" },
+  { name: "Stellar", type: "Testnet (x402)", status: "Micropayments" },
+  { name: "Ethereum", type: "Sepolia (11155111)", status: "EVM Smart Contracts" },
+];
+
+export const articles = [
+  {
+    title: "Building Model Context Protocol (MCP) Servers for Autonomous AI Agents",
+    tag: "AI & Web3",
+    readTime: "5 min read",
+    snippet: "How to connect LLMs (Claude, Cursor) to EVM smart contract execution vectors using deterministic MCP tool interfaces.",
+    url: "https://github.com/Webghost01-NG/executix-ai",
+  },
+  {
+    title: "Gas Optimization & Security Patterns in Solidity Smart Contracts",
+    tag: "Solidity",
+    readTime: "7 min read",
+    snippet: "A practical guide to memory caching, reentrancy guards, and custom errors using Foundry test suites.",
+    url: "https://github.com/Webghost01-NG",
+  },
+  {
+    title: "Democratizing Real Estate RWAs via EIP-712 Signed AI Appraisals",
+    tag: "RWAs & BOT Chain",
+    readTime: "6 min read",
+    snippet: "Architecting fractional real estate tokenization contracts backed by verifiable cryptographic oracle attestations.",
+    url: "https://frontend-ecru-nu-85.vercel.app",
+  },
+];
+
 export const experience = [
   {
     role: "Web3 Solidity Developer Trainee",
